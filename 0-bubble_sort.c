@@ -24,13 +24,13 @@ void bubble_sort(int *array, size_t size)
 	size_t i = 0;
 	int flag = 1;
 
-	if (!array || size < 2)
+	if (size < 2)
 		return;
 
 	while (flag)
 	{
 		flag = 0;
-		for (i = 0; i < size; i++)
+		for (i = 0; i < size - 1; i++)
 		{
 			if (array[i] > array[i + 1])
 			{
